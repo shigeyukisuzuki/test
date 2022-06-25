@@ -15,7 +15,8 @@ while getopts 'n:l:w:' opt ;do
 			;;
 		w) waitingTime=$OPTARG
 			;;
-		?) echo "options are -n or -l or -w"
+		?) echo "Usage: option are -n or -l or -w."
+		   exit
 			;;
 	esac
 done
