@@ -31,7 +31,7 @@ shift $(( $OPTIND - 1 ))
 
 # check usage error
 if [ -n "$problemFile" -a -n "$problemGenerator" ]; then
-	echo "Usage: use just one option with -f or -c"
+	echo "Usage: use just one option with -f or -c."
 	exit
 fi
 
@@ -42,7 +42,12 @@ temp=$(mktemp)
 function finalize {
 	# print answer
 	echo -e "\rvvvvvvvvvvvvvv answer vvvvvvvvvvvvvvvvv"
-	cat $temp | xargs -I@ printf "%4d = 0x%02X\n" @ @ | nl
+	if [ -n "$problemFile" ];then
+		awk '{print $1, "=", $2}' $temp | column -t | nl
+	fi
+	if [ -n "$problemGenerator" ]; then
+		cat $temp | xargs -I@ printf "%4d = 0x%02X\n" @ @ | nl
+	fi
 
 	# print time lapsed
 	timeLapsed=$(( $solvingTime - $remainingTime ))
@@ -62,8 +67,18 @@ done
 
 # print problem
 echo -e "\rvvvvvvvvvvvvvv problem vvvvvvvvvvvvvvvvv"
-shuf -e {0..255} | head -n $numberOfProblem >> $temp
-cat $temp | xargs -I@ printf "%4d = \n" @ | nl
+
+if [ -n "$problemFile" ];then
+	for problem in $(shuf -e $(awk '{print $1}' $problemFile) -n $numberOfProblem);do
+		awk -v problem=$problem '$1==problem' $problemFile >> $temp
+	done
+	awk '{print $1, "="}' $temp | column -t | nl
+fi
+if [ -n "$problemGenerator" ];then
+	shuf -e {0..255} -n $numberOfProblem >> $temp
+	cat $temp | xargs -I@ printf "%4d = \n" @ | nl
+fi
+
 for i in $(seq $solvingTime -1 1);do
 	echo -n -e "\r$i  "
 	remainingTime=$i
