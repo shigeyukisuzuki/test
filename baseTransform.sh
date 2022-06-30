@@ -7,22 +7,30 @@ remainingTime=150
 waitingTime=5
 problemFile=
 problemGenerator=
+hyphen=false
 
 # parse options
-while getopts 'n:l:w:c:f:' opt ;do
+while getopts 'n:l:w:c:f:h' opt ;do
 	case $opt in
-		n) numberOfProblem=$OPTARG
+		n)	numberOfProblem=$OPTARG
 			;;
-		l) solvingTime=$OPTARG
+		l)	solvingTime=$OPTARG
 			;;
-		w) waitingTime=$OPTARG
+		w)	waitingTime=$OPTARG
 			;;
-		f) problemFile=$OPTARG
+		f)	problemFile=$OPTARG
+			if [ $problemFile == "-" ]; then
+		   		problemFile=$(mktemp)
+				hyphen=true
+				cat /dev/stdin >> $problemFile
+			fi
 			;;
-		c) problemGenerator=$OPTARG
+		c)	problemGenerator=$OPTARG
 			;;
-		?) echo "Usage: option are -n or -l or -w."
-		   exit
+		h)	echo "Usage: option are -n or -l or -w or -c or -f or -h."
+			;;
+		?)	echo "Usage: option are -n or -l or -w or -c or -f or -h."
+		  	exit
 			;;
 	esac
 done
@@ -54,6 +62,9 @@ function finalize {
 	echo "Result: time Lapsed = $timeLapsed second."
 
 	# delete temp file
+	if [ $hyphen == "true" ]; then
+		rm $problemFile
+	fi
 	rm $temp
 }
 
@@ -69,13 +80,13 @@ done
 echo -e "\rvvvvvvvvvvvvvv problem vvvvvvvvvvvvvvvvv"
 
 if [ -n "$problemFile" ];then
-	for problem in $(shuf -e $(awk '{print $1}' $problemFile) -n $numberOfProblem);do
+	for problem in $(shuf -r -e $(awk '{print $1}' $problemFile) -n $numberOfProblem);do
 		awk -v problem=$problem '$1==problem' $problemFile >> $temp
 	done
 	awk '{print $1, "="}' $temp | column -t | nl
 fi
 if [ -n "$problemGenerator" ];then
-	shuf -e {0..255} -n $numberOfProblem >> $temp
+	shuf -r -e {0..255} -n $numberOfProblem >> $temp
 	cat $temp | xargs -I@ printf "%4d = \n" @ | nl
 fi
 
