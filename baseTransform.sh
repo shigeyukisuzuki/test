@@ -5,9 +5,11 @@ numberOfProblem=30
 solvingTime=150
 remainingTime=150
 waitingTime=5
+problemFile=
+problemGenerator=
 
 # parse options
-while getopts 'n:l:w:' opt ;do
+while getopts 'n:l:w:c:f:' opt ;do
 	case $opt in
 		n) numberOfProblem=$OPTARG
 			;;
@@ -15,11 +17,23 @@ while getopts 'n:l:w:' opt ;do
 			;;
 		w) waitingTime=$OPTARG
 			;;
+		f) problemFile=$OPTARG
+			;;
+		c) problemGenerator=$OPTARG
+			;;
 		?) echo "Usage: option are -n or -l or -w."
 		   exit
 			;;
 	esac
 done
+
+shift $(( $OPTIND - 1 ))
+
+# check usage error
+if [ -n "$problemFile" -a -n "$problemGenerator" ]; then
+	echo "Usage: use just one option with -f or -c"
+	exit
+fi
 
 # make temp file
 temp=$(mktemp)
