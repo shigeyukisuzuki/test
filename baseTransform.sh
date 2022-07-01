@@ -9,6 +9,9 @@ problemFile=
 problemGenerator=
 hyphen=false
 
+# usage description.
+usage="Usage: options are -n or -l or -w or -c or -f or -h."
+
 # parse options
 while getopts 'n:l:w:c:f:h' opt ;do
 	case $opt in
@@ -27,9 +30,10 @@ while getopts 'n:l:w:c:f:h' opt ;do
 			;;
 		c)	problemGenerator=$OPTARG
 			;;
-		h)	echo "Usage: option are -n or -l or -w or -c or -f or -h."
+		h)	echo $usage
+			exit
 			;;
-		?)	echo "Usage: option are -n or -l or -w or -c or -f or -h."
+		?)	echo $usage
 		  	exit
 			;;
 	esac
@@ -52,8 +56,7 @@ function finalize {
 	echo -e "\rvvvvvvvvvvvvvv answer vvvvvvvvvvvvvvvvv"
 	if [ -n "$problemFile" ];then
 		awk '{print $1, "=", $2}' $temp | column -t | nl
-	fi
-	if [ -n "$problemGenerator" ]; then
+	elif [ -n "$problemGenerator" ]; then
 		cat $temp | xargs -I@ printf "%4d = 0x%02X\n" @ @ | nl
 	fi
 
@@ -84,8 +87,7 @@ if [ -n "$problemFile" ];then
 		awk -v problem=$problem '$1==problem' $problemFile >> $temp
 	done
 	awk '{print $1, "="}' $temp | column -t | nl
-fi
-if [ -n "$problemGenerator" ];then
+elif [ -n "$problemGenerator" ];then
 	shuf -r -e {0..255} -n $numberOfProblem >> $temp
 	cat $temp | xargs -I@ printf "%4d = \n" @ | nl
 fi
