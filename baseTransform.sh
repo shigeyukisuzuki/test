@@ -8,18 +8,21 @@ waitingTime=5
 problemFile=
 problemGenerator=
 hyphen=false
+problemRepeatability=""
 
 # usage description.
-usage="Usage: options are -n or -l or -w or -c or -f or -h."
+usage="Usage: options are -n or -l or -w or -c or -f or -r or -h."
 
 # parse options
-while getopts 'n:l:w:c:f:h' opt ;do
+while getopts 'n:l:w:c:f:rh' opt ;do
 	case $opt in
 		n)	numberOfProblem=$OPTARG
 			;;
 		l)	solvingTime=$OPTARG
 			;;
 		w)	waitingTime=$OPTARG
+			;;
+		c)	problemGenerator=$OPTARG
 			;;
 		f)	problemFile=$OPTARG
 			if [ $problemFile == "-" ]; then
@@ -28,7 +31,7 @@ while getopts 'n:l:w:c:f:h' opt ;do
 				cat /dev/stdin >> $problemFile
 			fi
 			;;
-		c)	problemGenerator=$OPTARG
+		r)  problemRepeatability="-r"
 			;;
 		h)	echo $usage
 			exit
@@ -83,12 +86,12 @@ done
 echo -e "\rvvvvvvvvvvvvvv problem vvvvvvvvvvvvvvvvv"
 
 if [ -n "$problemFile" ];then
-	for problem in $(shuf -r -e $(awk '{print $1}' $problemFile) -n $numberOfProblem);do
+	for problem in $(shuf ${problemRepeatability} -e $(awk '{print $1}' $problemFile) -n $numberOfProblem);do
 		awk -v problem=$problem '$1==problem' $problemFile >> $temp
 	done
 	awk '{print $1, "="}' $temp | column -t | nl
 elif [ -n "$problemGenerator" ];then
-	shuf -r -e {0..255} -n $numberOfProblem >> $temp
+	shuf ${problemRepeatability} -e {0..255} -n $numberOfProblem >> $temp
 	cat $temp | xargs -I@ printf "%4d = \n" @ | nl
 fi
 
