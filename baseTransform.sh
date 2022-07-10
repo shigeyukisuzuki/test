@@ -9,12 +9,13 @@ problemFile=
 problemGenerator=
 hyphen=false
 problemRepeatability=""
+output=""
 
 # usage description.
-usage="Usage: options are -n or -l or -w or -c or -f or -r or -h."
+usage="Usage: options are -n or -l or -w or -c or -f or -r or -o or -h."
 
 # parse options
-while getopts 'n:l:w:c:f:rh' opt ;do
+while getopts 'n:l:w:c:f:ro:h' opt ;do
 	case $opt in
 		n)	numberOfProblem=$OPTARG
 			;;
@@ -32,6 +33,8 @@ while getopts 'n:l:w:c:f:rh' opt ;do
 			fi
 			;;
 		r)  problemRepeatability="-r"
+			;;
+		o)  output=$OPTARG
 			;;
 		h)	echo $usage
 			exit
@@ -65,7 +68,11 @@ function finalize {
 
 	# print time lapsed
 	timeLapsed=$(( $solvingTime - $remainingTime ))
-	echo "Result: time Lapsed = $timeLapsed second."
+	if [ -z "${output}" ];then
+		echo "Result: time Lapsed = $timeLapsed second."
+	else
+		echo -n -e "\nResult: time Lapsed = $timeLapsed second." | tee -a "$output"
+	fi
 
 	# delete temp file
 	if [ $hyphen == "true" ]; then
