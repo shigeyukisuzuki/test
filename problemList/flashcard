@@ -1,0 +1,313 @@
+include ～を含む 【名】inclusion: 包含、含まれるもの
+steal ～を盗む steal sensitive information
+exploit (脆弱性) を突いて攻撃する
+release ～を入手可能な状態にする
+target ～を標的とする
+allow ～を可能とする、許可する 【名】allowlist: 許可リスト the bug allowing attackers to execute arbitrary code
+provide ～を提供する 【名】provider: プロバイダー provide detailed information
+create ～を作り出す 【名】creation: 作成
+compromise (システムなど) を侵害する 【名】compromise: 侵害 compromised networks
+warn ～を警告する 【名】warning: 警告、注意 FBI warn of...
+expose ～を暴露する 【名】exposure: 暴露、公表 exposed customers' information
+affect ～に影響する 【形】affected: 影響を受けた affected versions
+fix (脆弱性やバグ) を修正する the problem fixed in this update
+claim ～と主張する
+contain ～を含む 【名】container: コンテナ
+pay ～を支払う、(注意など)を払う 【名】payment: 支払い force to pay the ransom
+deploy ～を配置する、展開する 【名】deployment: 配備 deploy ransomware payload
+state ～と表明する
+confirm ～を確認する 【名】confirmation: 確認、承認 confirm a data breach
+prevent ～を妨げる 【名】prevention: 防止、予防 prevent attackers from accessing the network
+publish ～を発行する、出版する 【名】publisher: 発行者、パブリッシャー publish a list of the affected products
+detect ～を検知する 【名】detection: 検知
+require ～を必要とする、要求する 【名】requirement: 要件、必要条件
+launch ～を立ち上げる、～を開始する
+block ～を遮断する
+offer ～を提供する
+reveal ～を明らかにする reveal the technical detail
+identify ～を特定する
+leak 流出する、～を流出させる
+encrypt ～を暗号化する
+decrypt ～を復号する 【名】decryptor: 復号プログラム
+gain ～を獲得する
+disclose ～を公表する、暴露する 【名】disclosure: 公表、暴露 disclose cyberattack that impacted customers
+base ～を基盤とする、～に基づく
+execute ～を実行する
+manage ～を管理する 【名】management: 管理
+address (問題やバグなど) に対処する
+ensure ～を確実にする、保証する ensure all the networks are secure
+phish フィッシングを行う 【名】phishing: フィッシング phish the employee's credentials
+note ～に注意を払う、～と述べる 【形】notable: 注目に値する、顕著な it is worth noting that ...
+track ～を追跡する 【名】tracking: 追跡、トラッキング track the threat actor
+deliver ～を配送する 【名】delivery: 配送 deliver malicious emails
+attempt ～を試みる
+operate ～を運用する、操作する
+involve ～を巻き込む、関係させる 【名】involvement: 関与 they were involved in the money laundering
+relate ～に関連する 【形】related: 関連した kill all processes related to the malware
+investigate ～を調査する 【名】investigation: 調査
+secure ～を安全にする
+recommend ～を推奨する 【名】recommendation: 勧告、推薦 we recommend the following measures
+contact ～と接触する、連絡する
+disable ～を無効化する 【形】disabled: 無効化された、故障した disable unnecessary functions
+delete ～を削除する 【名】deletion: 削除 accidentally deleted an important file
+exist 存在する、すでにある 【名】existence: 存在、実在 the bug exists in a third-party library
+expect ～を予期する、～と推定する 【形】unexpected: 予期しない、突然の
+link ～と関連づける
+fail 失敗する 【名】failure: 失敗、故障 it failed to patch the vulnerabilities
+conduct ～を行う
+distribute ～を配布する 【名】distribution: 配送、分布
+observe ～を観測する、観察する 【名】observation: 観測、観察
+urge ～に～するように強く要請する 【形】urgent: 緊急の
+impersonate ～になりすます 【名】impersonation: なりすまし the most impersonated brand in phishing attack
+advise ～を忠告する、勧める 【名・形】advisory: アドバイザリー (の)
+occur 起こる 【名】occurrence: 発生、出来事 one issue that occurred due to these fixes
+display ～を表示する、展示する
+focus ～に集中する、焦点を当てる
+determine ～を決心する、判断する 【名】determination: 決定 determine if the email is legitimate
+post ～を投稿する
+consider ～をよく考える、
+resolve ～を解決する、名前解決する 【名】resolver: (DNS の) リゾルバ― resolve the issue affecting Internet connectivity
+force ～を強いる
+obtain ～を得る obtain access to the victim network
+monitor ～を監視する
+alert
+analyze ～を分析する
+associate ～と関連付ける
+abuse ～を悪用する
+implement ～を実装する、実行する 【名】implementation: 実装、実行 once the above measures are implemented
+infect ～に感染させる 【名】infection: 感染
+mitigate ～を軽減する、緩和する 【名】mitigation: 軽減、緩和 to mitigate this issue
+bypass ～を迂回する
+highlight ～を強調する
+append ～を付け加える append the .hoge extension
+notify ～に通知する 【名】notification: 通知 notify law enforcement of the incident
+configure ～を設定する
+restore ～を復旧する、元に戻す 【名】restoration: 復旧、回復 restore from a backup created before the malware was installed
+argue ～と主張する 【名】argument: 主張、議論、引数 "Hogehoge" the firm argued.
+describe ～と説明する、記述する 【名】description: 記述、説明 (書) this report describes the evasion techniques
+generate ～を生成する、生じさせる 【名】generator: ジェネレーター generate the unique identifier
+avoid ～を避ける 【名】avoidance: 回避
+belong ～に属する networks belonging to critical infrastructure company
+indicate ～を示す、指摘する
+respond 対応する、応答する 【名】response: 返答、反応
+hide ～を隠す 【形】hidden: 隠れた、隠された use Morse code to hide malicious URLs
+recover ～を回復する 【名】recovery: 回復 there is no way to recover the funds
+suggest ～を提案する、示唆する 【名】suggestion: 提案
+inform ～に知らせる 【名】informant: 情報提供者
+commit (罪など) を犯す、～を約束する 【名】commitment: 約束、公約
+rely ～に依存する、～を信頼する 【名】reliability: 信頼性
+verify ～を検証する 【名】verification: 検証
+disrupt ～を中断させる、混乱させる 【名】disruption: 中断、破壊
+push ～を押し出す、配信する pushes a notification to the user
+charge ～を告発する、請求する
+limit ～を限定する、制限する
+switch ～を切り替える
+register ～に登録する 【名】registration: 登録 the domain was registered by someone else
+maintain ～を維持する、整備する 【名】maintenance: 維持、整備
+utilize ～を利用する 【名】utilization: 利用 utilize third-party packages
+establish ～を確立する 【名】establishment: 確立、機関 establish persistence and perform lateral movement
+wipe (データなど) を削除する 【名】wiper: ワイパー (データ削除マルウェア) wipe the hard drive
+modify ～を変更する 【名】modification: 変更 modify the default configuration
+trigger ～のきっかけとなる
+exfiltrate (データなど) を密かに流出させる 【名】exfiltration: (データの) 持ち出し、流出
+prompt ～するように促す
+embed ～を組み込む、埋め込む the attackers embed login forms into their phishing pages
+seek ～を求める、探す 【名】seeker: (仕事など)を求める人 seek access to the company’s environment
+expand 広がる、～を広げる 【名】expansion: 広がり this attack has expanded to other organizations
+engage ～に携わる、～を雇う 【名】engagement: 契約 engage in phishing and other kinds of frauds
+replace ～を～に取り替える 【名】replacement: 取り換え、置き換え replace outdated standards with newer variants
+seem ～と思われる 【副】seemingly: 見たところは、表面上は this version doesn't seem to be affected
+demand ～を要求する
+defend ～を防御する
+trick ～をだます trick the victim into opening email attachments
+pose ～を引き起こす、
+promote ～を促進する 【名】promotion: (販売) 促進
+emerge 台頭する、現れる、
+trust ～を信用する
+achieve ～を達成する、獲得する 【名】achievement: 功績、達成 achieve privilege escalation
+coordinate ～を調整する、まとめ上げる 【名】coordination: 調整、協調 a joint operation coordinated by the FBI
+aim ～を狙う、目指す
+submit ～を提出する 【名】submission: 提出 a sample submitted to the VT
+admit ～を認める、入れる 【名】admission: 入会、入学、入院など admit to being a victim of a ransomware attack
+concern ～に関係する
+inject ～を注入する、仕掛ける 【名】injection: 注入、インジェクション inject the card skimmer into the webpage
+allege ～と主張する
+automate ～を自動化する
+purchase ～を購入する
+conclude ～と結論づける 【名】conclusion: 結論 as the report concluded
+demonstrate ～を示す、証明する 【名】demonstration: 実演 the video demonstrated the exploitability of the bug
+locate ～に置く 【名】location: 場所、所在地 the servers are located in various countries
+request ～を要求する、要請する
+seize ～を押収する、～を掴む 【名】seizure: 押収 seized 10 servers used by the threat actor
+handle ～を扱う、処理する 【名】handling: 扱い、操作
+complete ～を完了する
+review ～を見直す、よく調べる
+employ ～を雇う、使用する 【名】employee: 従業員
+authenticate ～を認証する 【名】authentication: 認証
+search ～を探す、検索する
+invest ～を投資する 【名】investment: 投資
+crash ～を破壊する、クラッシュする
+range ～から～に及ぶ
+extend ～を拡張する、広げる
+extort ～を脅迫する、ゆすり取る 【名】extortion: 脅迫、ゆすり extort their victims multiple times
+enforce ～を強要する、実施する 【名】enforcement: 執行 enable and enforce MFA
+rate ～と評価する、見積もる
+advance 進歩する
+direct ～を指示する、～へ案内する
+attach ～を添付する、取り付ける 【名】attachment:
+authorize ～を認可する、権限を与える 【名】authorization: 認可、許可
+breach (データの) 流出、侵害
+feature 特徴、目玉
+campaign 一連の作戦、キャンペーン large-scale phishing campaign
+government 政府 【動】govern: ～を統治する、運営する
+tool 道具、ツール 【名】toolkit: ツールキット a freely available tool
+flaw 欠陥 fix 10 flaws
+source 出所 open source intelligence (OSINT)
+ransom 身代金 ransom demands
+firm 会社 cybersecurity firm JohnDoe
+process 過程、工程
+detail 細部、詳細
+law 法 law firms
+agency 機関 federal agency
+patch パッチ、修正プログラム
+scam 詐欺 【名】scammer: 詐欺師 the romance scams
+fraud 詐欺 【形】fraudulent: 詐欺の fraud detection mechanisms
+fraudster 詐欺師 freeze accounts used by fraudsters
+setting 設定、環境 the default settings
+image 画像、イメージ images uploaded to the C2
+policy 方針、信条、設定(の集まり) vulnerability disclosure policy
+variant (マルウェアなどの)亜種、変異種 massive amounts of variants
+industry 産業、業界 【形】industrial: 産業の、工業の oil and gas industry
+individual 個人
+privilege 特権 【形】privileged: 特権のある privilege escalation (elevation)
+type 型、タイプ these types of vulnerabilities
+sector 業界、分野 critical infrastructure sector
+department 省、局 the US Department of Justice
+identity 識別情報 online identity monitoring service
+cryptocurrency 暗号通貨 【名】currency: 通貨 cryptocurrency theft
+content 内容、コンテンツ change the clipboard content
+enterprise 企業 access to large enterprise network
+connection 接続、コネクション
+form 形態、種類、フォーム all forms of transactions
+method 方法、方式 different encryption methods
+option 選択肢、オプション 【形】optional: 任意選択の the best option
+intelligence 知能、インテリジェンス artificial intelligence (AI)
+outage (システムなどの) 停止 the computer outage caused issues at some clinics
+theft 窃盗 identity theft
+consumer 消費者 target consumers and small businesses
+capability 能力 【形】capable: 能力がある the malware displayed advanced capabilities to evade detection
+tactic 戦術 Tactics, Techniques and Procedures (TTPs)
+measure 対策、基準、(複数形で)方法
+technique 手法、テクニック 【形】technical: 技術的な obfuscation techniques to evade detection
+certificate 証明書 【動】certify: ～を証明する、認定する
+addition 付加 【形】additional: 追加の
+administrator 管理者 【名】administration: 管理、経営
+channel 経路、チャンネル Trickbot distribution channel
+evidence 証拠 【形】evident: 明らかな the evidence collected so far
+amount 量、総計
+affiliate 加盟メンバー
+loss 損害、喪失 【動】lose: ～を失う、負ける tens of millions in losses
+entity (人や組織などの)主体 governments and other entities
+value 値、価値
+role 役割 play a key role
+authority 当局、権威 【形】authoritative: 当局の、権威のある Certification Authority (CA)
+approach 取り組み方、接近
+supply 供給
+behavior 挙動、振る舞い 【動】behave: 振る舞う
+scheme 仕組み、悪だくみ、スキーム Internet-based fraud scheme
+instance 例、インスタンス for instance
+ability 能力 ability to analyze complex and large datasets
+fund 資金、基金
+patient 患者
+crime 犯罪 【名・形】criminal: 犯罪者、犯罪の organized crime group
+profile 注目度、プロフィール
+opportunity 機会 【形】opportunistic: 日和見的な Opportunity, Motivation and Rationalization
+function 機能、関数
+interest 興味、関心事
+term (利用などの)規約、期間、用語 terms of use
+volume 量、ボリューム the volume of suspicious network traffic
+tax 税金 【名】taxpayer: 納税者 tax season
+permission 許可 【動】permit: ～を許可する
+insider 内部の人、会員 insider threat
+task 仕事、タスク
+institution 機関、団体 【名】institute: 研究所 financial and medical institution
+strategy 戦略 【形】strategic: 戦略の the new zero trust strategy
+vector 経路、方向 the initial infection vector remain unclear
+article 記事 after the article published
+cost 費用
+court 裁判所 a court order
+bounty 報奨金 bug bounty program
+credential 認証情報 use a different credential for all log-ins
+election 選挙 【動】elect: ～を選ぶ the Presidential election
+status 状態 monitor the security status of the device
+complaint 苦情、告訴 【動】complain: 文句を言う complaints from enterprise users
+procedure 手順、手続き 【動】proceed: 進行する
+quarter 四半期 in the first quarter of last year
+executive 行政長官、経営者 Executive Order 14028
+instruction 説明、指示、命令 【動】instruct: ～を教える you can find detailed instructions here
+price 価格
+priority 優先度、優先すべきこと
+entry 入り口、項目 【動】enter：～に入る highlight suspicious log entry
+prison 刑務所 he was sentenced to five years in prison
+effect 効果、影響
+success 成功
+elevation (権限の)昇格 【動】elevate: (権限) を昇格させる
+malicious 悪意のある malicious attachments
+critical 重大な、致命的な critical vulnerability
+remote 遠隔の、遠隔からの 【副】remotely: 遠隔で Remote Code Execution(RCE)
+available 利用可能である 【名】availability: 可用性
+personal 個人の 【副】personally: 個人的に personal information
+multiple 多数の on multiple platform
+public 公共の、公然の
+financial 金銭的な、金融の 【名】finance: 金融、財政
+fake 偽の fake job posting
+social 社会の、社会的な 【名】society: 社会 social security number
+sensitive 機微な、取扱注意の steal sensitive data
+likely ありそうな
+recent 最近の 【副】recently: 最近 the most recent backup
+private 内密の、私用の 【副】privately: 非公開で、個人で private key
+further さらに進んだ
+several いくつかの execute several commands
+potential 潜在的な
+legitimate 正規の 【名】legitimacy: 正当性 impersonate legitimate software
+ongoing 進行中の ongoing phishing campaign
+current 現在の、最新の 【副】currently: 現在は under current versions
+federal 連邦の Federal Bureau of Investigation (FBI)
+internal 内部の access to the internal networks
+external 外部の XML external entity reference vulnerability
+significant 著しい、重要な 【副】significantly: 著しく affect a significant number of users
+corporate 法人の、企業の 【名】corporation: 法人 corporate and government victims
+previous 先の、以前の 【副】previously: 以前に version 2.4.1 and all previous versions
+certain ある特定の、確かな 【動】ascertain: ～を確認する
+specific 特定の、明白な 【副】specifically: 特に DDoS attacks against a specific target
+aware ～を知っている 【名】awareness: 意識、気づくこと
+initial 最初の 【動】initialize: ～を初期化する
+medical 医療の medical software vender
+suspicious 疑わしい、不審な 【名】suspicion: 疑い
+cumulative 累積の 【動】cumulate: ～を積み重ねる cumulative update
+former 前の、先の a former employee
+arbitrary 任意の 【副】arbitrarily: 任意に buffer overflow leading to arbitrary code execution
+massive 大規模な 【副】massively: 大規模に massive scale and ongoing attacks
+particular 特に、特定の 【副】particularly: 特に in this particular case
+numerous 多数の this update fixes numerous issues
+responsible ～の原因である、責任がある 【名】responsibility: 責任 it is unknown what group is responsible for the attack
+senior 上級の senior product manager
+sophisticated 洗練された 【形】unsophisticated: 洗練されていない highly sophisticated zero-day attack
+legal 法的な、法曹業界の、合法の
+known 既知の 【形】well-known: よく知られた
+entire 全体の、完全な 【副】entirely: 完全に entire corporate networks
+false 偽の、間違った 【副】falsely: 間違って、不正に to avoid false positives
+severe 深刻な 【名】severity: 深刻さ、重大さ a new report about a severe security issue
+confidential 機密の
+immediate 即時の、即座の 【副】immediately: 即座に receive an immediate response
+typical 典型的な 【副】typically: 典型的に、一般的に in a typical environment
+manual 手動の
+according ～によれば according to the latest report
+nearly ほとんど 【形】near: 近い nearly half of small business owners
+increasingly ますます 【動】increase: 増加する as cyber criminals use increasingly sophisticated methods
+approximately おおよそ 【形】approximate: おおよその approximately one million customers
+rather ～よりむしろ this seems to be a wiper rather than ransomware
+unfortunately 不運なことに Unfortunately, there was no backup.
+therefore したがって Therefore, English skills are required for security engineers.
+roughly だいたい 【形】rough: 乱暴な roughly 10 million individual devices
+reportedly 伝えられるところによれば 【動・名】report: ～を報告する、報告書 this attack reportedly took place in the morning
